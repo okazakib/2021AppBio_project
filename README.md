@@ -4,7 +4,7 @@ Project for course Applied Bioinfromatics.
 This project explore whether proteins with a high node-degree in protein interaction networks, also have a larger number of protein domains.
 
 The instructions provided for the project were as follows:
-1. Downloads the Homo sapiens part of STRING, a database from protein-protein interactions, from
+1. Download the Homo sapiens part of STRING, a database from protein-protein interactions, from
 https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz (Links to an external site.)
 The link above is from their download page.
 2. Create an interaction network by selecting the edges with a "combined score" larger or equal to 500, a number which indicates significance.
