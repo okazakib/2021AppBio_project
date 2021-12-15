@@ -7,15 +7,15 @@ PLOT_EXE=$(LANGUAGE) $(PLOT_SRC)
 #TXT_FILE=data/9606.protein.links.v11.0.txt
 PNG_FILE=protein_domains_vs_string_degree.png
 
-data/myensembldb.txt:
+TXT_FILE:
 	curl -L https://stockholmuniversity.box.com/shared/static/n8l0l1b3tg32wrzg2ensg8dnt7oua8ex -o data/myensembldb.txt
 	
 #uncompress_file:
 	#UNCOMPRESSED_TXT_FILE=gunzip $(COMPRESSED_TXT_FILE)
 
 #UNCOMPRESSED_TXT_FILE= data/myensembldb.txt
-plot:data/myensembldb.txt
-	#$(PLOT_EXE) $(UNCOMPRESSED_TXT_FILE) $(PNG_FILE)
-	$(PLOT_EXE) data/myensembldb.txt $(PNG_FILE)
 #plot:
+	#$(PLOT_EXE) $(UNCOMPRESSED_TXT_FILE) $(PNG_FILE)
+	
+plot:
 	#$(PLOT_EXE) $(TXT_FILE) $(PNG_FILE)
