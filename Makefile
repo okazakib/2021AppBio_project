@@ -13,7 +13,7 @@ myensembldb.txt:
 	
 uncompress_file:
 	#UNCOMPRESSED_TXT_FILE=gunzip $(COMPRESSED_TXT_FILE)
-	UNCOMPRESSED_TXT_FILE=myensembldb.txt
+	UNCOMPRESSED_TXT_FILE=./myensembldb.txt
 	
 plot:
 	$(PLOT_EXE) $(UNCOMPRESSED_TXT_FILE) $(PNG_FILE)
