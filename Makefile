@@ -3,7 +3,7 @@
 PLOT_SRC = scripts/main.py
 LANGUAGE =python
 PLOT_EXE=$(LANGUAGE) $(PLOT_SRC)
-COMPRESSED_TXT_FILE=curl https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz -o 9606.protein.links.v11.0.txt.gz
+COMPRESSED_TXT_FILE=curl https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz -o data/9606.protein.links.v11.0.txt.gz
 TXT_FILE=data/9606.protein.links.v11.0.txt
 PNG_FILE=protein_domains_vs_string_degree.png
 
