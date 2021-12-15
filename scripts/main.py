@@ -2,7 +2,7 @@
 
 ##Author: Nayanika Bhalla
 ##Description:
-##Usage:
+##Usage:main.py <input_file> <output_file>
 
 #####################################################
 
