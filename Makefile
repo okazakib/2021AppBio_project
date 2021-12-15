@@ -13,9 +13,9 @@ data/myensembldb.txt:
 #uncompress_file:
 	#UNCOMPRESSED_TXT_FILE=gunzip $(COMPRESSED_TXT_FILE)
 
-UNCOMPRESSED_TXT_FILE= data/myensembldb.txt
-plot:
-	$(PLOT_EXE) $(UNCOMPRESSED_TXT_FILE) $(PNG_FILE)
-
+#UNCOMPRESSED_TXT_FILE= data/myensembldb.txt
+plot:data/myensembldb.txt
+	#$(PLOT_EXE) $(UNCOMPRESSED_TXT_FILE) $(PNG_FILE)
+	$(PLOT_EXE) data/myensembldb.txt $(PNG_FILE)
 #plot:
 	#$(PLOT_EXE) $(TXT_FILE) $(PNG_FILE)
