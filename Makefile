@@ -8,7 +8,7 @@ TXT_FILE=data/9606.protein.links.v11.0.txt
 PNG_FILE=protein_domains_vs_string_degree.png
 
 uncompress_file:
-	UNCOMPRESSED_TXT_FILE= gunzip $(COMPRESSED_TXT_FILE)
+	UNCOMPRESSED_TXT_FILE=gunzip $(COMPRESSED_TXT_FILE)
 	
 plot:
 	$(PLOT_EXE) $(UNCOMPRESSED_TXT_FILE) $(PNG_FILE)
