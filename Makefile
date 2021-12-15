@@ -13,9 +13,11 @@ all:myensembldb.txt plot clean
 
 myensembldb.txt:
 	curl -L https://stringdb-static.org/download/protein.links.v11.0/9606.protein.links.v11.0.txt.gz | gunzip > $@
-		
+
+TXT_FILE=myensembldb.txt
+
 plot:
-        $(PLOT_EXE) myensembldb.txt $(PNG_FILE)
+        $(PLOT_EXE) $(TXT_FILE) $(PNG_FILE)
 
 clean:
         rm myensembldb.txt
